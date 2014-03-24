@@ -1,10 +1,11 @@
 {
     "root": "/",
     "required": [
-        "aaa/nnn/"
+        "aaa/[]/bbb",
+        "ccc/nnn/"
     ],
     "validate": {
-        "name3/[]/key*": "=> value > 0"
+        "ccc/nn*": "=> @ > 20"
     },
     "loop": [
         {
