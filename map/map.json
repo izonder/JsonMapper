@@ -1,0 +1,27 @@
+{
+    "root": "/",
+    "required": [
+        "aaa/nnn/"
+    ],
+    "validate": {
+        "name3/[]/key*": "=> value > 0"
+    },
+    "loop": [
+        {
+            "path": "aaa",
+            "index": "idx",
+            "loop": [
+                {
+                    "path": "@/bbb",
+                    "index": "idx2"
+                }
+            ]
+        }
+    ],
+    "as": {
+        "name#": "value/[]/test"
+    },
+    "filter": {
+
+    }
+}
