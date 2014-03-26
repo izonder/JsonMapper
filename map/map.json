@@ -7,20 +7,17 @@
     "validate": {
         "ccc/nn*": "=> @ > 20"
     },
-    "loop": [
-        {
-            "path": "aaa",
-            "index": "idx",
-            "loop": [
-                {
-                    "path": "@/bbb",
-                    "index": "idx2"
-                }
-            ]
+    "loop": {
+        "path": "aaa",
+        "index": "idx",
+        "loop": {
+            "path": "@/bbb",
+            "index": "idx2"
         }
-    ],
+    },
     "as": {
-        "name#": "value/[]/test"
+        "name": "aaa/[]/bbb",
+        "test": "aaa/@idx/bbb/@idx2"
     },
     "filter": {
 
